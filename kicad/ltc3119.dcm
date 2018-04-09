@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTC3119
+D 18V, 5A Synchronous Buck-Boost DC/DC Converter, QFN-28
+$ENDCMP
+#
+#End Doc Library

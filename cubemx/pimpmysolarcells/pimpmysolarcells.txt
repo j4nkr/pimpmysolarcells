@@ -1,0 +1,112 @@
+Configuration	pimpmysolarcells
+STM32CubeMX 	4.20.1
+Date	02/09/2018
+MCU	STM32F102RBTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	IN1	ADC1_IN1	PA1
+ADC1	IN2	ADC1_IN2	PA2
+ADC1	IN3	ADC1_IN3	PA3
+ADC1	IN4	ADC1_IN4	PA4
+ADC1	IN5	ADC1_IN5	PA5
+ADC1	IN6	ADC1_IN6	PA6
+ADC1	IN7	ADC1_IN7	PA7
+I2C1	I2C	I2C1_SCL	PB6
+I2C1	I2C	I2C1_SDA	PB7
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PD0-OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PD1-OSC_OUT
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_IN	PC14-OSC32_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_OUT	PC15-OSC32_OUT
+RTC	Activate Clock Source	RTC_VS_RTC_Activate	VP_RTC_VS_RTC_Activate
+SPI1	Full-Duplex Master	SPI1_MISO	PB4
+SPI1	Full-Duplex Master	SPI1_MOSI	PB5
+SPI1	Full-Duplex Master	SPI1_SCK	PB3
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SYS_WakeUp0	SYS_WKUP	PA0-WKUP
+TIM3	PWM Generation CH2	TIM3_CH2	PC7
+TIM3	PWM Generation CH4	TIM3_CH4	PC9
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+USB	Device (FS)	USB_DM	PA11
+USB	Device (FS)	USB_DP	PA12
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PC13-TAMPER-RTC	GPIO_EXTI13	STM6600_INT
+3	PC14-OSC32_IN	RCC_OSC32_IN	
+4	PC15-OSC32_OUT	RCC_OSC32_OUT	
+5	PD0-OSC_IN	RCC_OSC_IN	
+6	PD1-OSC_OUT	RCC_OSC_OUT	
+14	PA0-WKUP	SYS_WKUP	
+15	PA1	ADC1_IN1	
+16	PA2	ADC1_IN2	
+17	PA3	ADC1_IN3	
+20	PA4	ADC1_IN4	
+21	PA5	ADC1_IN5	
+22	PA6	ADC1_IN6	
+23	PA7	ADC1_IN7	
+24	PC4	GPIO_Input	USB0_FAULT
+25	PC5	GPIO_Input	USB1_FAULT
+26	PB0	GPIO_Input	BTN0
+27	PB1	GPIO_Input	BTN1
+28	PB2	GPIO_Input	BTN2
+29	PB10	GPIO_Input	USB1_STATUS
+30	PB11	GPIO_Input	USB0_STATUS
+33	PB12	GPIO_Output	EN_USB1
+34	PB13	GPIO_Output	EN_USB0
+35	PB14	GPIO_Input	PGOOD
+36	PB15	GPIO_Output	PWM/SYNC
+37	PC6	GPIO_EXTI6	LTC4156_IRQ
+38	PC7	TIM3_CH2	MPPC
+39	PC8	GPIO_Output	USB_DCONOFF
+40	PC9	TIM3_CH4	USB_DC_SYNC
+41	PA8	GPIO_Output	ULED
+42	PA9	USART1_TX	
+43	PA10	USART1_RX	
+44	PA11	USB_DM	
+45	PA12	USB_DP	
+46	PA13	SYS_JTMS-SWDIO	
+49	PA14	SYS_JTCK-SWCLK	
+51	PC10	GPIO_Output	DC_EP
+52	PC11	GPIO_Input	BUSY_EP
+53	PC12	GPIO_Output	CS_EP
+54	PD2	GPIO_Output	RESET_EP
+55	PB3	SPI1_SCK	
+56	PB4	SPI1_MISO	
+57	PB5	SPI1_MOSI	
+58	PB6	I2C1_SCL	
+59	PB7	I2C1_SDA	
+61	PB8	GPIO_Output	PS_HOLD
+62	PB9	GPIO_Input	PB_OUT
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : pimpmysolarcells
+Project Folder : /home/jk/git/pimpmysolarcells/cubemx/pimpmysolarcells
+Toolchain / IDE : SW4STM32
+Firmware Package Name and Version : STM32Cube FW_F1 V1.4.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+
